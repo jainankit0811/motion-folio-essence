@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
   const [text, setText] = useState("");
@@ -40,7 +40,7 @@ const HeroSection = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-poppins mb-6">
             <span className="block text-foreground">Hello, I'm</span>
-            <span className="block hero-text">Alex Thompson</span>
+            <span className="block hero-text">Ankit Dhanawat</span>
           </h1>
           
           <div className="text-2xl md:text-3xl lg:text-4xl mb-8 h-12">
@@ -75,7 +75,7 @@ const HeroSection = () => {
 
           <div className="flex items-center justify-center space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/jainankit0811" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full glass border-white/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 glow-hover"
@@ -83,7 +83,7 @@ const HeroSection = () => {
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/ankit-dhanawat" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full glass border-white/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 glow-hover"
@@ -91,7 +91,7 @@ const HeroSection = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:alex@example.com"
+              href="mailto:ankitd0811@gmail.com"
               className="p-3 rounded-full glass border-white/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 glow-hover"
             >
               <Mail className="w-6 h-6" />
@@ -104,6 +104,7 @@ const HeroSection = () => {
         <button 
           onClick={() => scrollToSection("about")}
           className="p-2 rounded-full glass border-white/20 hover:bg-white/10 transition-all duration-300"
+          title="Scroll to About section"
         >
           <ArrowDown className="w-6 h-6" />
         </button>

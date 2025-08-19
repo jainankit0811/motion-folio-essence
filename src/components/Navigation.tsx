@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 
 const Navigation = () => {
@@ -43,7 +43,7 @@ const Navigation = () => {
             className="font-poppins font-bold text-xl cursor-pointer hero-text hover:scale-105 transition-transform duration-300"
             onClick={() => scrollToSection("home")}
           >
-            Alex Thompson
+            Ankit Dhanawat
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
