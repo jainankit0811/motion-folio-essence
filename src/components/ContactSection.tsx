@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
+import { useState } from "react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -42,20 +42,20 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex.thompson@example.com",
-      href: "mailto:alex.thompson@example.com"
+      value: "ankitd0811@gmail.com",
+      href: "mailto:ankitd0811@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 9079932431",
+      // href: "tel:+91 9079932431"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      href: "https://maps.google.com/?q=San+Francisco,+CA"
+      value: "Udaipur, Rajasthan, IN",
+      // href: ""
     }
   ];
 
@@ -63,19 +63,19 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/jainankit0811",
       color: "hover:text-gray-900 dark:hover:text-gray-100"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/ankit-dhanawat",
       color: "hover:text-blue-600"
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com",
+      href: "https://x.com/DhanawatAn99877",
       color: "hover:text-blue-400"
     }
   ];
@@ -245,7 +245,7 @@ const ContactSection = () => {
                   className="bg-primary hover:bg-primary-glow shadow-primary hover:shadow-glow transition-all duration-300 hover:scale-105"
                   asChild
                 >
-                  <a href="mailto:alex.thompson@example.com">
+                  <a href="mailto:ankitd0811@gmail.com">
                     <Mail className="w-4 h-4 mr-2" />
                     Start a Conversation
                   </a>

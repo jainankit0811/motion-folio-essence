@@ -1,29 +1,18 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Award, BookOpen, Calendar } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Award, BookOpen, Calendar, GraduationCap } from "lucide-react";
 
 const EducationSection = () => {
   const education = [
     {
       id: 1,
-      degree: "Master of Science in Computer Science",
-      school: "Stanford University",
-      location: "Stanford, CA",
-      period: "2017 - 2019",
-      gpa: "3.9/4.0",
-      description: "Specialized in Machine Learning and Human-Computer Interaction. Thesis on 'Optimizing User Experience in Web Applications through AI-Driven Design Patterns.'",
-      honors: ["Summa Cum Laude", "Dean's List", "Outstanding Graduate Student Award"],
-      coursework: ["Advanced Algorithms", "Machine Learning", "HCI", "Software Engineering", "Database Systems"]
-    },
-    {
-      id: 2,
-      degree: "Bachelor of Science in Software Engineering",
-      school: "University of California, Berkeley",
-      location: "Berkeley, CA",
-      period: "2013 - 2017",
-      gpa: "3.8/4.0",
+      degree: "Bachelor of Technology in Computer Science and Engineering",
+      school: "Techno India NJR Institute of Technology",
+      location: "Udaipur, Rajasthan, IN",
+      period: "2022 - 2026",
+      gpa: "7.6",
       description: "Comprehensive foundation in software development, data structures, and system design. Active member of the Computer Science Society and hackathon organizer.",
-      honors: ["Magna Cum Laude", "President's Honor Roll"],
+      // honors: ["Magna Cum Laude", "President's Honor Roll"],
       coursework: ["Data Structures", "Operating Systems", "Computer Networks", "Software Architecture", "Web Development"]
     }
   ];
@@ -31,61 +20,37 @@ const EducationSection = () => {
   const certifications = [
     {
       id: 1,
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
+      title: "CS50x Certified",
+      issuer: "Harvard",
       date: "2023",
-      credential: "SAA-C03",
-      description: "Professional-level certification demonstrating expertise in designing distributed systems on AWS.",
-      logo: "🏆"
+      // credential: "SAA-C03",
+      description: "Completed certificate course covering computer science fundamentals, C, Python, SQL, and web development.",
+      // logo: "🏆"
     },
     {
       id: 2,
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2022",
-      credential: "GCP-PD",
+      title: "Innovation, Design and Entrepreneurship (IDE) Bootcamp",
+      issuer: "Wadhwani foundation",
+      date: "2024",
+      // credential: "GCP-PD",
       description: "Professional certification for developing scalable applications on Google Cloud Platform.",
-      logo: "☁️"
+      // logo: "☁️"
     },
-    {
-      id: 3,
-      title: "Certified Kubernetes Application Developer",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2022",
-      credential: "CKAD",
-      description: "Validates skills in designing and building cloud-native applications for Kubernetes.",
-      logo: "⚙️"
-    },
-    {
-      id: 4,
-      title: "Meta Front-End Developer Professional",
-      issuer: "Meta (Facebook)",
-      date: "2021",
-      credential: "META-FE",
-      description: "Comprehensive certification covering modern front-end development practices and React.",
-      logo: "⚛️"
-    }
   ];
 
   const achievements = [
     {
       id: 1,
-      title: "Best Innovation Award",
-      event: "TechCrunch Disrupt 2023",
-      description: "Won first place for developing an AI-powered accessibility tool that helps visually impaired users navigate web applications."
+      title: "Code Red 4.0 Hackathon",
+      event: "Issued by ACIC-VGU Foundation, Jaipur, 2024",
+      description: "Excited to share that our team secured 2nd place in the 72-hour Code Red 4.0 Hackathon, organized by ACIC-VGU Foundation at Vivekananda Global University, Jaipur! "
     },
     {
       id: 2,
-      title: "Hackathon Champion",
-      event: "Google I/O Developer Challenge 2022",
-      description: "Led team to victory building a sustainable transportation app using Google Maps API and machine learning."
+      title: "Odoo Hackathon",
+      event: "Issued by Odoo, Mahatma Mandir Convention Centre in Gandhinagar, Gujarat, 2025",
+      description: "Semi-Finalist at Odoo Hackathon – a 24-hour coding marathon showcasing innovation, teamwork, and problem-solving with real-world tech solutions."
     },
-    {
-      id: 3,
-      title: "Open Source Contributor",
-      event: "React.js Community",
-      description: "Contributed to React core with 50+ merged PRs and maintained popular UI component library with 10k+ stars."
-    }
   ];
 
   return (
@@ -139,7 +104,7 @@ const EducationSection = () => {
                         {edu.description}
                       </p>
                       
-                      <div className="mb-4">
+                      {/* <div className="mb-4">
                         <h5 className="font-semibold text-foreground mb-2">Honors & Awards:</h5>
                         <div className="flex flex-wrap gap-2">
                           {edu.honors.map((honor) => (
@@ -149,7 +114,7 @@ const EducationSection = () => {
                             </Badge>
                           ))}
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                     
                     <div>
@@ -186,17 +151,17 @@ const EducationSection = () => {
               >
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="text-3xl">{cert.logo}</div>
+                    {/* <div className="text-3xl">{cert.logo}</div> */}
                     <div className="flex-1">
                       <h4 className="font-bold text-foreground mb-1">{cert.title}</h4>
                       <p className="text-primary font-medium mb-2">{cert.issuer}</p>
                       <p className="text-sm text-muted-foreground mb-3">{cert.description}</p>
-                      <div className="flex justify-between items-center">
+                      {/* <div className="flex justify-between items-center">
                         <Badge variant="outline" className="text-xs">
                           {cert.credential}
                         </Badge>
                         <span className="text-xs text-muted-foreground">{cert.date}</span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </CardContent>

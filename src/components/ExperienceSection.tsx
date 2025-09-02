@@ -1,62 +1,47 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin, Building } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Building, MapPin } from "lucide-react";
 
 const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      description: "Leading development of enterprise web applications using React, Node.js, and AWS. Mentoring junior developers and architecting scalable solutions for 1M+ users.",
-      achievements: [
-        "Improved application performance by 40%",
-        "Led team of 6 developers",
-        "Implemented CI/CD pipeline reducing deployment time by 60%"
-      ],
-      technologies: ["React", "Node.js", "AWS", "PostgreSQL", "Docker"]
-    },
-    {
-      id: 2,
-      title: "Full-Stack Developer",
-      company: "InnovateLab",
-      location: "Austin, TX",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple client projects using modern web technologies. Collaborated closely with design teams to create pixel-perfect user interfaces.",
-      achievements: [
-        "Delivered 15+ successful projects",
-        "Reduced bug reports by 35%",
-        "Implemented automated testing increasing code coverage to 90%"
-      ],
-      technologies: ["Vue.js", "Python", "Django", "MongoDB", "Redis"]
-    },
-    {
-      id: 3,
       title: "Frontend Developer",
-      company: "StartupXYZ",
+      company: "Freelance",
       location: "Remote",
-      period: "2019 - 2020",
-      description: "Built responsive web applications and mobile-first interfaces. Worked directly with founders to translate business requirements into technical solutions.",
+      period: " Feb 2025– Mar 2025",
+      // description: "Leading development of enterprise web applications using React, Node.js, and AWS. Mentoring junior developers and architecting scalable solutions for 1M+ users.",
       achievements: [
-        "Launched 3 successful MVPs",
-        "Achieved 98% mobile responsiveness score",
-        "Integrated 10+ third-party APIs"
-      ],
-      technologies: ["React", "TypeScript", "Sass", "REST APIs", "Git"]
-    }
+          "Created responsive web pages using Next.js and Tailwind CSS, improving performance and SEO",
+          "Worked with clients to build custom features, leading to 40% faster load times and 20% more user engagement."      ],
+      technologies: ["Next.js"]
+    },
+        {
+      id: 2,
+      title: " Python Intern",
+      company: "CSEdge",
+      location: "Remote",
+      period: "Apr 2024– May 2024",
+      // description: "Leading development of enterprise web applications using React, Node.js, and AWS. Mentoring junior developers and architecting scalable solutions for 1M+ users.",
+      achievements: [
+                "Completed a 1-month internship focused on Python development and automation",
+                "Delivered 4+ project tasks showcasing problem-solving and coding efficiency.",
+                "Applied data structures and backend automation techniques to enhance software functionality",
+                "Improved a Python-based automation script, reducing manual effort by 25%."
+              ],
+      technologies: ["Python"]
+    },
   ];
 
   const skills = [
-    { name: "JavaScript", level: 95 },
-    { name: "React/Next.js", level: 90 },
+    { name: "HTML", level: 80 },
+    { name: "CSS", level: 80 },
+    { name: "Tailwind CSS", level: 80 },
+    { name: "JavaScript", level: 80 },
+    { name: "React/Next.js", level: 80 },
     { name: "Node.js", level: 85 },
     { name: "Python", level: 80 },
-    { name: "TypeScript", level: 88 },
-    { name: "AWS/Cloud", level: 75 },
-    { name: "UI/UX Design", level: 70 },
-    { name: "DevOps", level: 65 }
+    { name: "MongoDB", level: 80},
   ];
 
   return (
@@ -110,9 +95,9 @@ const ExperienceSection = () => {
                           </div>
                         </div>
                         
-                        <p className="text-muted-foreground mb-4 leading-relaxed">
+                        {/* <p className="text-muted-foreground mb-4 leading-relaxed">
                           {exp.description}
-                        </p>
+                        </p> */}
                         
                         <div className="mb-4">
                           <h5 className="font-semibold text-foreground mb-2">Key Achievements:</h5>
@@ -174,7 +159,7 @@ const ExperienceSection = () => {
             </Card>
 
             {/* Achievements */}
-            <Card className="glass border-white/20 backdrop-blur-xl">
+            {/* <Card className="glass border-white/20 backdrop-blur-xl">
               <CardContent className="p-6">
                 <h4 className="font-bold text-foreground mb-4">Quick Stats</h4>
                 <div className="space-y-4">
@@ -196,7 +181,7 @@ const ExperienceSection = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
