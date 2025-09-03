@@ -1,43 +1,32 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ExternalLink, Github } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "TaskFlow Dashboard",
-      description: "A comprehensive project management dashboard with real-time collaboration features, built with React, Node.js, and PostgreSQL.",
+      title: "Techie AI",
+      description: "TechieAi is a Flutter-powered app that transforms the PC building process by cutting out intermediaries, allowing users to find top-quality components at optimal prices. Leveraging advanced AI and the Gemini API, TechieAi offers real-time, precise recommendations for selecting compatible hardware, guiding users from CPU and GPU selection to ensuring compatibility across all parts.",
       image: project1,
-      technologies: ["React", "Node.js", "PostgreSQL", "Socket.io", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      technologies: ["Flutter", "Gemini API"],
+      liveUrl: "https://app.techieai.tech/",
+      // githubUrl: "https://github.com",
       featured: true
     },
     {
       id: 2,
-      title: "EcoStore Mobile App",
-      description: "Sustainable e-commerce mobile application with AI-powered product recommendations and carbon footprint tracking.",
+      title: "Collegology-Education Site",
+      description: "Developed a full-stack web platform designed to simplify the university application process. The system manages students’ application details and assigns consultants to guide them effectively. Built using Next.js for the front-end and the MongoDB, Express, Node.js for the back-end, ensuring a scalable, responsive, and user-friendly experience.",
       image: project2,
-      technologies: ["React Native", "Express.js", "MongoDB", "Stripe", "AWS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      technologies: ["Next.js", "MongoDB", "Express", "Node.js"],
+      // liveUrl: "https://example.com",
+      githubUrl: "https://github.com/Rigify-Innovations/Collegology",
       featured: true
     },
-    {
-      id: 3,
-      title: "DataViz Analytics Platform",
-      description: "Advanced data visualization platform for business intelligence with machine learning insights and custom dashboards.",
-      image: project3,
-      technologies: ["Python", "Django", "D3.js", "Redis", "Docker"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      featured: false
-    }
-  ];
+    ];
 
   return (
     <section id="projects" className="py-20">

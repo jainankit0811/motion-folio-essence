@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Heart, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,9 +13,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:alex.thompson@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/jainankit0811", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/ankit-dhanawat/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:ankitd0811@gmail.com", label: "Email" },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Brand & Description */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold font-poppins hero-text">
-              Alex Thompson
+              Ankit Dhanawat
             </h3>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Passionate software developer creating innovative digital solutions 
@@ -78,13 +78,13 @@ const Footer = () => {
                 Ready to work together?
               </p>
               <a 
-                href="mailto:alex.thompson@example.com"
+                href="mailto:ankitd0811@gmail.com"
                 className="block text-primary hover:text-primary-glow transition-colors"
               >
-                alex.thompson@example.com
+                ankitd0811@gmail.com
               </a>
               <p className="text-muted-foreground">
-                San Francisco, CA
+                Udaipur, Rajasthan, IN
               </p>
             </div>
           </div>
@@ -94,13 +94,13 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/50">
           <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
             <p className="text-muted-foreground text-sm flex items-center">
-              © {currentYear} Alex Thompson. Made with 
+              © {currentYear} Ankit Dhanawat. Made with 
               <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" />
               and lots of coffee.
             </p>
-            <p className="text-muted-foreground text-sm">
+            {/* <p className="text-muted-foreground text-sm">
               Built with React, TypeScript & Tailwind CSS
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
