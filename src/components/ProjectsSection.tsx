@@ -1,5 +1,6 @@
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
+import project3 from "@/assets/project-3.jpg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -24,6 +25,16 @@ const ProjectsSection = () => {
       technologies: ["Next.js", "MongoDB", "Express", "Node.js"],
       // liveUrl: "https://example.com",
       githubUrl: "https://github.com/Rigify-Innovations/Collegology",
+      featured: true
+    },
+    {
+      id: 3,
+      title: "AI-ChatBot Using Gemini AI",
+      description: "A full-stack web app with a modern two-column chat layout, enabling real-time interaction with Google’s Gemini AI. Built a responsive AI chat platform featuring real-time Gemini AI responses, conversation history, and a sleek glassmorphism UI. Developed a two-column interface for seamless Gemini AI conversations, optimized for all devices.",
+      image: project3,
+      technologies: ["React.js", "Gemini-API", "Express", "Node.js"],
+      // liveUrl: "https://example.com",
+      githubUrl: "https://github.com/jainankit0811/Ai-Chatbot",
       featured: true
     },
     ];
