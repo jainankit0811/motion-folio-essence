@@ -1,6 +1,7 @@
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import project4 from "@/assets/project-4.jpg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -19,24 +20,35 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
+      title: "E-Commerce Platform",
+      description: "This is a full-stack e-commerce application built with a Node.js and Express.js backend and a React frontend. The backend uses MongoDB for data storage and provides a RESTful API with features like JWT authentication, product management, and a persistent shopping cart. The frontend is a modern, responsive user interface built with Vite and styled with Tailwind CSS, offering pages for user authentication, product browsing, and cart management.",
+      image: project2,
+      technologies: ["MongoDB", "Express", "React.js", "Node.js"],
+      liveUrl: "https://shopme-ad.netlify.app",
+      // githubUrl: "",
+      featured: true
+    },
+    {
+      id: 3,
       title: "Collegology-Education Site",
       description: "Developed a full-stack web platform designed to simplify the university application process. The system manages students’ application details and assigns consultants to guide them effectively. Built using Next.js for the front-end and the MongoDB, Express, Node.js for the back-end, ensuring a scalable, responsive, and user-friendly experience.",
-      image: project2,
+      image: project3,
       technologies: ["Next.js", "MongoDB", "Express", "Node.js"],
       // liveUrl: "https://example.com",
       githubUrl: "https://github.com/Rigify-Innovations/Collegology",
       featured: true
     },
     {
-      id: 3,
+      id: 4,
       title: "AI-ChatBot Using Gemini AI",
       description: "A full-stack web app with a modern two-column chat layout, enabling real-time interaction with Google’s Gemini AI. Built a responsive AI chat platform featuring real-time Gemini AI responses, conversation history, and a sleek glassmorphism UI. Developed a two-column interface for seamless Gemini AI conversations, optimized for all devices.",
-      image: project3,
+      image: project4,
       technologies: ["React.js", "Gemini-API", "Express", "Node.js"],
       // liveUrl: "https://example.com",
       githubUrl: "https://github.com/jainankit0811/Ai-Chatbot",
       featured: true
     },
+
     ];
 
   return (
