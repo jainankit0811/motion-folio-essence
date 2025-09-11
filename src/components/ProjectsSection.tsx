@@ -52,7 +52,7 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: "AI-ChatBot Using Gemini AI",
+      title: "Book Management System",
       description: "Expanded a library management system using the MERN Stack. Integrated features that improved book tracking efficiency. ",
       image: project5,
       technologies: ["React.js", "Gemini-API", "Express", "Node.js"],
