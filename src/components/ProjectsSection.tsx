@@ -2,6 +2,8 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -48,6 +50,17 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/jainankit0811/Ai-Chatbot",
       featured: true
     },
+    {
+      id: 5,
+      title: "AI-ChatBot Using Gemini AI",
+      description: "Expanded a library management system using the MERN Stack. Integrated features that improved book tracking efficiency. ",
+      image: project5,
+      technologies: ["React.js", "Gemini-API", "Express", "Node.js"],
+      liveUrl: "https://book-flow.netlify.app/",
+      githubUrl: "https://github.com/jainankit0811/Bookflow-app",
+      featured: true
+    },
+    
 
     ];
 
