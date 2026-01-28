@@ -22,12 +22,12 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "E-Commerce Platform",
-      description: "This is a full-stack e-commerce application built with a Node.js and Express.js backend and a React frontend. The backend uses MongoDB for data storage and provides a RESTful API with features like JWT authentication, product management, and a persistent shopping cart. The frontend is a modern, responsive user interface built with Vite and styled with Tailwind CSS, offering pages for user authentication, product browsing, and cart management.",
+      title: "Doctor Appointment Booking System",
+      description: "Full-stack appointment booking system enabling patients to book doctor appointments with real-time slot availability. Built with Express.js, Next.js, PostgreSQL, and Prisma ORM. Implemented user authentication, role-based access control, appointment management, and doctor availability scheduling with CSV report generation.",
       image: project2,
-      technologies: ["MongoDB", "Express", "React.js", "Node.js"],
-      liveUrl: "https://shopme-ad.netlify.app",
-      // githubUrl: "",
+      technologies: ["Node.js", "Express.js", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "Cloudinary"],
+      // liveUrl: "",
+      githubUrl: "https://github.com/jainankit0811/Doctor-Appointment-Booking-System.git",
       featured: true
     },
     {
