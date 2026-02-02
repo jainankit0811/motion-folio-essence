@@ -5,7 +5,8 @@ const AboutSection = () => {
   const skills = [
     "React", "Node.js", "Python", "SQL", "MongoDB","Express", 
     "Git", "Figma", "Next.js", "Tailwind CSS","TypeScript", 
-    "PostgreSQL", "Prisma", "Cloudinary", "Docker", "CI/CD"
+    "PostgreSQL", "Prisma", "Cloudinary", "Docker", "CI/CD",
+    "AWS"
   ];
 
   return (
