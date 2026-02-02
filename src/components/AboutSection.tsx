@@ -3,8 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection = () => {
   const skills = [
-    "React", "Node.js", "Python", "SQL", 
-    "MongoDB","Express", "Git", "Figma", "Next.js", "Tailwind CSS","TypeScript", 
+    "React", "Node.js", "Python", "SQL", "MongoDB","Express", 
+    "Git", "Figma", "Next.js", "Tailwind CSS","TypeScript", 
     "PostgreSQL", "Prisma", "Cloudinary", "Docker", "CI/CD"
   ];
 
