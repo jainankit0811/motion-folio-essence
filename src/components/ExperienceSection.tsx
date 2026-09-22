@@ -6,17 +6,18 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      title: "Frontend Developer",
-      company: "Freelance",
-      location: "Remote",
-      period: " Feb 2025– Mar 2025",
+      title: "Quality Assurance Intern",
+      company: "Terragrit",
+      location: "On-site",
+      period: "Mar 2026 - Present",
       // description: "Leading development of enterprise web applications using React, Node.js, and AWS. Mentoring junior developers and architecting scalable solutions for 1M+ users.",
       achievements: [
-          "Created responsive web pages using Next.js and Tailwind CSS, improving performance and SEO",
-          "Worked with clients to build custom features, leading to 40% faster load times and 20% more user engagement."      ],
-      technologies: ["Next.js"]
+        "Performed Manual and Automation Testing to ensure software quality, functionality, and reliability.",
+        "Designed and executed test cases, identified and reported bugs, and performed Functional, Regression, and UI testing in collaboration with development teams."
+      ],
+      technologies: ["Manual Testing", "Automation Testing"]
     },
-        {
+    {
       id: 2,
       title: " Python Intern",
       company: "CSEdge",
@@ -24,24 +25,22 @@ const ExperienceSection = () => {
       period: "Apr 2024– May 2024",
       // description: "Leading development of enterprise web applications using React, Node.js, and AWS. Mentoring junior developers and architecting scalable solutions for 1M+ users.",
       achievements: [
-                "Completed a 1-month internship focused on Python development and automation",
-                "Delivered 4+ project tasks showcasing problem-solving and coding efficiency.",
-                "Applied data structures and backend automation techniques to enhance software functionality",
-                "Improved a Python-based automation script, reducing manual effort by 25%."
-              ],
+        "Completed a 1-month internship focused on Python development and automation",
+        "Delivered 4+ project tasks showcasing problem-solving and coding efficiency.",
+        "Applied data structures and backend automation techniques to enhance software functionality",
+        "Improved a Python-based automation script, reducing manual effort by 25%."
+      ],
       technologies: ["Python"]
     },
   ];
 
   const skills = [
-    { name: "HTML", level: 80 },
-    { name: "CSS", level: 80 },
-    { name: "Tailwind CSS", level: 80 },
-    { name: "JavaScript", level: 80 },
-    { name: "React/Next.js", level: 80 },
-    { name: "Node.js", level: 85 },
+    { name: "Manual Testing", level: 80 },
+    { name: "API Testing", level: 80 },
+    { name: "Automation Testing", level: 80 },
+    { name: "Postman", level: 80 },
     { name: "Python", level: 80 },
-    { name: "MongoDB", level: 80},
+    { name: "SQL", level: 80 },
   ];
 
   return (
@@ -52,7 +51,7 @@ const ExperienceSection = () => {
             Experience & Skills
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            My professional journey and technical expertise
+            My professional journey
           </p>
         </div>
 
@@ -60,20 +59,20 @@ const ExperienceSection = () => {
           {/* Experience Timeline */}
           <div className="lg:col-span-2 space-y-8">
             <h3 className="text-2xl font-bold font-poppins mb-8 text-foreground">Professional Experience</h3>
-            
+
             <div className="relative">
               {/* Timeline line */}
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-primary-glow"></div>
-              
+
               {experiences.map((exp, index) => (
-                <div 
+                <div
                   key={exp.id}
                   className="relative timeline-item"
                   style={{ animationDelay: `${index * 0.3}s` }}
                 >
                   {/* Timeline dot */}
                   <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-glow"></div>
-                  
+
                   <div className="ml-20 mb-12">
                     <Card className="glass border-white/20 backdrop-blur-xl glow-hover">
                       <CardContent className="p-6">
@@ -83,7 +82,7 @@ const ExperienceSection = () => {
                             {exp.period}
                           </Badge>
                         </div>
-                        
+
                         <div className="flex items-center space-x-4 mb-4 text-muted-foreground">
                           <div className="flex items-center">
                             <Building className="w-4 h-4 mr-2" />
@@ -94,11 +93,11 @@ const ExperienceSection = () => {
                             {exp.location}
                           </div>
                         </div>
-                        
+
                         {/* <p className="text-muted-foreground mb-4 leading-relaxed">
                           {exp.description}
                         </p> */}
-                        
+
                         <div className="mb-4">
                           <h5 className="font-semibold text-foreground mb-2">Key Achievements:</h5>
                           <ul className="space-y-1">
@@ -110,10 +109,10 @@ const ExperienceSection = () => {
                             ))}
                           </ul>
                         </div>
-                        
+
                         <div className="flex flex-wrap gap-2">
                           {exp.technologies.map((tech) => (
-                            <span 
+                            <span
                               key={tech}
                               className="px-2 py-1 text-xs bg-primary/10 text-primary rounded border border-primary/20"
                             >
@@ -132,12 +131,12 @@ const ExperienceSection = () => {
           {/* Skills */}
           <div className="space-y-8">
             <h3 className="text-2xl font-bold font-poppins mb-8 text-foreground">Technical Skills</h3>
-            
+
             <Card className="glass border-white/20 backdrop-blur-xl">
               <CardContent className="p-6">
                 <div className="space-y-6">
                   {skills.map((skill, index) => (
-                    <div 
+                    <div
                       key={skill.name}
                       className="fade-in"
                       style={{ animationDelay: `${index * 0.1}s` }}
@@ -147,7 +146,7 @@ const ExperienceSection = () => {
                         <span className="text-sm text-primary font-bold">{skill.level}%</span>
                       </div>
                       <div className="skill-bar">
-                        <div 
+                        <div
                           className="skill-progress"
                           style={{ '--progress-width': `${skill.level}%` } as React.CSSProperties}
                         ></div>

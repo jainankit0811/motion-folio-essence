@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const HeroSection = () => {
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
-  const fullText = "Software Developer";
+  const fullText = "Software Tester - Manual Tester - QA Engineer";
 
   useEffect(() => {
     let index = 0;
@@ -51,8 +51,8 @@ const HeroSection = () => {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            Passionate about creating beautiful, functional, and user-centered digital experiences. 
-            I specialize in full-stack development and modern web technologies.
+            Passionate Software Tester focused on quality, reliability, and user experience. 
+            Skilled in manual testing, test case design, bug reporting, and ensuring high-quality software.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">

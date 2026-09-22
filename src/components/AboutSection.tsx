@@ -3,10 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection = () => {
   const skills = [
-    "React", "Node.js", "Python", "SQL", "MongoDB","Express", 
-    "Git", "Figma", "Next.js", "Tailwind CSS","TypeScript", 
-    "PostgreSQL", "Prisma", "Cloudinary", "Docker", "CI/CD",
-    "AWS"
+    "Manual Testing", "API Testing", "Quality Assurance", "Automation Testing", "Postman",
+    "Python", "SQL", "Git", "Figma", "PostgreSQL", "Prisma", "Cloudinary", "Docker", "CI/CD", "AWS"
   ];
 
   return (
@@ -17,7 +15,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Crafting digital experiences with passion and precision
+            Ensuring software quality with passion and precision.
           </p>
         </div>
 
@@ -33,12 +31,12 @@ const AboutSection = () => {
                   />
                   <div>
                     <h3 className="text-2xl font-bold font-poppins text-foreground">Ankit Dhanawat</h3>
-                    <p className="text-primary font-medium">Full-Stack Developer</p>
+                    <p className="text-primary font-medium">QA Engineer</p>
                   </div>
                 </div>
                 
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  A highly motivated Software Developer with React, Node.js, and MongoDB expertise. Passionate about building scalable web and mobile applications, optimizing performance, and delivering clean, efficient code. Experienced in frontend and backend development and database management. Dedicated to continuous learning, problem-solving, and creating innovative digital solutions. 
+                  A highly motivated Software Tester focused on delivering reliable, high-quality software. Skilled in manual testing, test case design, bug reporting, API testing, and quality assurance. Passionate about problem-solving, continuous learning, and improving user experiences.
                 </p>
                 
                 {/* <p className="text-muted-foreground leading-relaxed">

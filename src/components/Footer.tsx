@@ -6,7 +6,7 @@ const Footer = () => {
   const quickLinks = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
+    // { label: "Projects", href: "#projects" },
     { label: "Experience", href: "#experience" },
     { label: "Education", href: "#education" },
     { label: "Contact", href: "#contact" },
@@ -35,8 +35,7 @@ const Footer = () => {
               Ankit Dhanawat
             </h3>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
-              Passionate software developer creating innovative digital solutions 
-              and beautiful user experiences.
+              Passionate Software Tester ensuring quality, reliability, and seamless user experiences.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -77,7 +76,7 @@ const Footer = () => {
               <p className="text-muted-foreground">
                 Ready to work together?
               </p>
-              <a 
+              <a
                 href="mailto:ankitd0811@gmail.com"
                 className="block text-primary hover:text-primary-glow transition-colors"
               >
@@ -94,7 +93,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/50">
           <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
             <p className="text-muted-foreground text-sm flex items-center">
-              © {currentYear} Ankit Dhanawat. Made with 
+              © {currentYear} Ankit Dhanawat. Made with
               <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" />
               and lots of coffee.
             </p>

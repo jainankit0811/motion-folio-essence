@@ -11,9 +11,9 @@ const EducationSection = () => {
       location: "Udaipur, Rajasthan, IN",
       period: "2022 - 2026",
       gpa: "7.6",
-      description: "Comprehensive foundation in software development, data structures, and system design. Active member of the Computer Science Society and hackathon organizer.",
+      description: "Comprehensive foundation in software development and system design. Active member of the Computer Science Society and hackathon organizer.",
       // honors: ["Magna Cum Laude", "President's Honor Roll"],
-      coursework: ["Data Structures", "Operating Systems", "Computer Networks", "Software Architecture", "Web Development"]
+      coursework: ["Operating Systems", "Computer Networks", "Software Architecture", "DBMS"]
     }
   ];
 
