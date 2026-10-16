@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const HeroSection = () => {
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
-  const fullText = "Software Tester - Manual Tester - QA Engineer";
+  const fullText = "Associate Test Engineer";
 
   useEffect(() => {
     let index = 0;

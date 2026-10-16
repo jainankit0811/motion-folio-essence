@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      title: "Quality Assurance Intern",
+      title: "Associate Test Engineer",
       company: "Terragrit",
       location: "On-site",
       period: "Mar 2026 - Present",
